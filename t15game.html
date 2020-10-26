@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html >
+<html>
+ <head>
+  <title>Game Launcher</title>
+  <script type="text/javascript" src="t15game.js"></script> 
+  <style type="text/css">
+    #cnv
+    {
+        border-color:Red;
+        border-style:dotted;
+        border-width:2px;
+    }
+    button
+    {
+        border-radius:10px;
+        border: none;
+        background-color:#999999;
+    }
+    button:hover
+    {
+        border-radius:20px;
+        border-color:lightblue;
+        border-style:solid;
+        border-width:2px;
+        background-color:#aaaaaa;
+    }
+    #skill
+    {   
+        border-color:lightblue;
+        border-width:2px;
+        font-size:20px;
+        outline:none;
+    }
+    div
+    {
+      border-radius:10px;
+      border-color :lightblue;
+      border-width:2px; 
+      border-style:dotted; 
+    }
+    option
+    {
+        outline-style:dotted;
+        border-radius:10px;
+    }
+  </style>
+ </head>
+ <body>
+  <table>
+   <tr>
+    <td>
+     <canvas id = "cnv" > </canvas> <br />
+    </td>  
+    <td>
+     <div>
+      <h1>Уровень FPS.</h1>
+      <button id = "fpsb">Задать скорость тиков.</button>
+     </div>
+     <div id = "skillselect">
+      <h1> Уровень сложности </h1>
+      <form action="">
+       <input type="radio" name="skill" id = "easy" checked /> Лёгкая. <br>
+       <input type="radio" name="skill" id = "middle" /> Средняя. <br>
+       <input type="radio" name="skill" id = "hard" /> Тяжёлая. <br>
+       <input type="radio" name="skill" id = "unreal" /> Невозможная. <br>
+       <input type="radio" name="skill" id = "HARDCORE" /> Хардкор. <br>
+      </form>
+     </div>
+     <br />
+     <div id="record">
+     <h1>Рекордная таблица</h1>
+     <table id="recTbl" border = "1">
+      <tr>
+       <td>Имя</td><td>Сложность</td><td>Очки</td>
+      </tr>
+     </table> 
+     </div>
+     <br />
+     <br />
+     <button id="but1"> Начать игру </button>
+    </td>
+   <tr>
+  </table>
+  <hr>
+ </body>
+</html>
